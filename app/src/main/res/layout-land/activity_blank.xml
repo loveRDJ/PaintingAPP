@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".BlankActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/button_brush"
+            android:background="@drawable/ic_brush_black_24dp"></Button>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/button_color"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/colorpicker"></Button>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/button_eraser"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/eraser"></Button>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_queue_music_black_24dp"
+            android:id="@+id/music"/>
+        <ImageView
+            android:id="@+id/temperature"
+            android:layout_width="60dp"
+            android:layout_height="60dp"></ImageView>
+        <ToggleButton
+            android:id="@+id/button_mute"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:textOn=" "
+            android:textOff=" "
+            android:background="@drawable/toggle_selector"
+            android:onClick="blankMuteVolume"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.painting.object.HandWrite
+            android:id="@+id/handwrite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.example.painting.object.HandWrite>
+    </LinearLayout>
+
+</LinearLayout>

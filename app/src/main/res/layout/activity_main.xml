@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/button_mute"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="20dp"
+        android:textOff=""
+        android:textOn=""
+        android:background="@drawable/toggle_selector"
+        android:onClick="muteVolume"/>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <Button
+           android:id="@+id/button_start"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Start"
+           android:textColor="#FFFFFF"
+           android:background="@drawable/custom_button"
+           android:layout_marginTop="130dp"
+           android:layout_marginLeft="30dp"/>
+
+       <Button
+           android:id="@+id/button_music"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Music"
+           android:textColor="#FFFFFF"
+           android:background="@drawable/custom_button"
+           android:layout_marginTop="30dp"
+           android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/button_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Works"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+   </LinearLayout>
+
+
+
+</LinearLayout>
